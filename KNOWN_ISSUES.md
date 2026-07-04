@@ -237,3 +237,50 @@ Before starting new work, review this file and ask:
 2. Is anything becoming annoying during real use?
 3. Should any known issue become the next experiment?
 4. Are we stacking new features on top of an unresolved foundation problem?
+
+
+---
+
+
+### 007: Overload detector thresholds are fixed heuristics
+
+Status: `watch`
+
+Source:
+- Experiment 003: Overwhelm Detector
+- Shellwalker commit: `f8eaff3 Add overload signal detector`
+
+Description:
+The overload detector uses fixed thresholds for open tasks, overdue tasks, medication state, bills due soon, and check-in trends.
+
+Risk:
+The detector may be too sensitive or not sensitive enough for real use.
+
+Possible future fix:
+Tune thresholds after manual use notes or allow user-adjustable sensitivity.
+
+
+---
+
+
+### 008: Medication timing is not considered by overload detector
+
+Status: `watch`
+
+Source:
+- Experiment 003: Overwhelm Detector
+
+Description:
+The detector treats medication not logged today as a signal without considering whether the scheduled medication time has arrived.
+
+Risk:
+The detector may add overload score too early in the day.
+
+Possible future fix:
+Compare medication scheduled time to current time before counting it as missing.
+
+
+---
+
+
+
