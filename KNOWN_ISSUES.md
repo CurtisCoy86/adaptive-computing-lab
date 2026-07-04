@@ -299,3 +299,16 @@ These issues affect usability and cognitive load more than core functionality.
 
 
 
+## Shellwalker historical cleanup limitations
+
+After Experiment 005, paid-bill and completed-task historical cleanup remains limited.
+
+Paid bills and completed tasks may require separate history views or new numbering/removal semantics. This was not changed during the interaction reliability pass because it would require a broader design decision.
+
+Future work should explore history management without making critical responsibilities easier to hide accidentally.
+
+
+---
+
+
+
