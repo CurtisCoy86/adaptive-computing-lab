@@ -23,6 +23,35 @@ Examples:
 - Time of day
 - Startup behavior
 
+## Minimum Data Needed
+
+What is the least amount of data required for this experiment to work?
+
+## Local-Only Data
+
+What data must remain local and should not be shared or centrally stored?
+
+## Derived Signals
+
+Can raw data be converted into safer signals?
+
+Example:
+
+- Instead of exact bill amount, use budget_pressure = low / medium / high.
+- Instead of task text, use overdue_task_count.
+- Instead of medication name, use medication_logged_today = true / false.
+
+## Consent Level
+
+Choose one:
+
+- Level 0: No personal data
+- Level 1: Local non-sensitive data
+- Level 2: Local sensitive data
+- Level 3: Local automation
+- Level 4: Shared aggregate research
+- Level 5: Special review required
+
 ## Behavior
 
 What should the system do?
