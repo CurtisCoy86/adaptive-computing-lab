@@ -283,4 +283,19 @@ Compare medication scheduled time to current time before counting it as missing.
 ---
 
 
+## Shellwalker interaction reliability limitations
+
+The Shellwalker audit found several user interaction issues that may require future refinement:
+
+- Suggestion lifecycle and ID stability can become confusing if suggestions are regenerated too often.
+- Multi-word names are not yet handled consistently across all commands.
+- Historical cleanup for completed tasks and paid bills remains limited.
+- Feedback history may need pruning or summarization if it grows too large.
+
+These issues affect usability and cognitive load more than core functionality.
+
+
+---
+
+
 
